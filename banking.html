@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Side</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class=" mx-auto p-8 w-3/4 mx-auto">
+        <h1 class=" text-6xl">Welcome To Your <span class="text-blue-500">Bank Acount</span>!!!</h1>
+    </header>
+    <main>
+       <section class=" w-3/4 mx-auto">
+           <div class=" grid grid-cols-3 gap-4 ">
+               <div class="text-white bg-green-400 p-16 rounded">
+                   <h2 class="text-2xl"> deposit</h2>
+                   <h4  class="text-5xl">$<span id="deposit-total-amount">000</span> </h4>
+               </div>
+               <div class="text-white bg-yellow-400 p-16 rounded">
+                    <h2 class="text-2xl">Withdrow</h2>
+                    <h4 class="text-5xl">$<span id="withraw-total">000</span> </h4>
+               </div>
+               <div class="text-white bg-pink-400 p-16 rounded">
+                    <h2 class="text-2xl">Balance</h2>
+                    <h4 class="text-5xl">$<span id="upadate-balance">1225</span> </h4>
+               </div>
+            </div>
+            <div class="grid grid-cols-2 mt-4 gap-2">
+                
+                <div class=" bg-green-400 p-16 rounded ">
+                    <h1>Please Deposit</h1>
+                    <input id="deposit-total" class="block border-2 rounded border-green-500 w-3/4
+                    m-2 p-2"  type="text" name="" id="input-deposit" placeholder="$Add your diposit Amount">
+                    <button id="button-deposite" class="text-white bg-green-500 text-white py-2 px-4 rounded">Deposit</button>
+                </div>
+                <div class=" bg-yellow-400 p-16 rounded ">
+                    <h1>Please Withdrow</h1>
+                    <input class="block border-2 rounded border-green-500 w-3/4
+                    m-2 p-2"  type="text" name="" id="withdraw-amount" placeholder="$Withow your Amount">
+                    <button id="button-withdrow" class="bg-green-500 text-white py-2 px-4 rounded">Withdrow</button>
+                </div>
+ 
+            </div>
+       </section>
+       <!-- deposit input  -->
+       <section>
+         
+       </section>
+    </main>
+    <script src="banking.js"></script>
+</body>
+</html>
